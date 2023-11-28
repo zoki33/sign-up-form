@@ -1,0 +1,47 @@
+body{
+    background-image: url(jacek-dylag-hUHzaiAHuUc-unsplash.jpg);
+    background-size: cover;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.left-side{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+}
+.logo-container{
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 20vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+
+}
+
+
+.logo{
+    width: 9rem;
+}
+
+
+.title{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+}
