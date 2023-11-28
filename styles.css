@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html {    
+        background: url(jacek-dylag-hUHzaiAHuUc-unsplash.jpg) no-repeat center fixed;     
+        background-size: cover;
+}
 body{
-    background-image: url(jacek-dylag-hUHzaiAHuUc-unsplash.jpg);
-    background-size: cover;
     margin: 0px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 
 .container{
     display: flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-direction: row;
+    width: 100wh;
     height: 100vh;
 
 }
@@ -18,30 +21,140 @@ body{
 .left-side{
     width: 45%;
     height: 100%;
-    position: absolute;
+}
+.right-side{
+    width: 45%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 0px;
+    padding-right: 0px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
 }
 .logo-container{
-    height: 10rem;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.25);
     position: relative;
-    top: 20vh;
+    top: 18.3vh;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    flex-basis: 50%;
     
 
 }
+.first-row{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30%;
+    height: 75%;
+}
+
+.scnd-row{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30%;
+    height: 75%;
+}
+.top-container{
+    padding-top: 10vh;
+    height: 25%;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.form-container{
+    display:flex;
+    flex-direction: row;
+    gap: 7rem;
+    height: 100%;
+   
+}
+
 
 
 .logo{
-    width: 9rem;
+    height: 90%;
 }
+
+.mid-container{
+    width: 100%;
+    height: 35%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding-left: 0px;
+}
+
+.bot-container{
+    width: 100%;
+    height: 25%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.form{
+    padding-left: 0px;
+    height: 100%;
+    padding-left: 2rem;
+}
+
+.field{
+    padding-left: 0px;
+    border: none;
+}
+
 
 
 .title{
     color: white;
     font-family: 'Pacifico', cursive;
-    font-size: 4rem;
+    font-size: clamp(1rem,4rem,2.5vw);
+    flex-shrink: 2;
+    
+}
+.title1{
+    color: black;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: clamp(1rem,4rem,2.5vw);
+}
+.title2{
+    color: black;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: clamp(1rem,4rem,2.5vw);
+    margin-top: 20px;
+}
+
+.intro{
+    margin: 0px;
+    font-size: clamp(1rem,2rem,1.5vw);
+    color: black;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    width: 60%;
+    text-align: left;
+    font-weight: 700;
+}
+
+span, p{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.submit-btn, login-text{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.submit-btn{
+    height: 70px;
+    width: 200px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
 }
